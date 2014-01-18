@@ -1,0 +1,13 @@
+= image_tag(asset_path(@product.image_url), width: 100, height: 100)
+%dl
+  - c = @product.class.name.constantize
+  %dt= c.human_attribute_name(:name)
+  %dd= @product.name
+  %dt= c.human_attribute_name(:price)
+  %dd= number_to_currency(@product.price)
+  %dt= c.human_attribute_name(:discount)
+  %dd= number_to_currency(@product.discount) || 'Undiscounted'
+  %dt= c.human_attribute_name(:tax).pluralize
+  %dd= number_to_percentage(@product.tax, precision:2)
+
+= link_to 'Add to Cart', '#', class:'btn add-product-to-cart', remote:true, data:{product_id:@product.id,product:dom_id(@product)}
