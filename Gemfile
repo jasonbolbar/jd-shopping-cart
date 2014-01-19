@@ -7,21 +7,18 @@ gem 'rails', '3.2.14'
 
 gem 'pg'
 gem 'heroku'
+gem 'haml-rails', '0.3.4'
+gem 'simple_form'
+gem 'country_select'
+gem 'sass-rails',   '~> 3.2.3'
+gem 'coffee-rails', '~> 3.2.1'
+gem 'twitter-bootstrap-rails'
+gem "less-rails"
+gem 'therubyracer', :platforms => :ruby
+gem 'uglifier', '>= 1.0.3'
 
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'simple_form'
-  gem 'twitter-bootstrap-rails'
-  gem 'haml-rails', '0.3.4'
-  gem 'country_select'
-  gem "less-rails"
-  gem 'therubyracer', :platforms => :ruby
-  gem 'uglifier', '>= 1.0.3'
-end
+
 
 
 
@@ -32,6 +29,7 @@ end
 
 group :production do
   gem 'puma'
+  gem 'haml'
 end
 
 gem 'jquery-rails'

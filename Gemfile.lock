@@ -157,6 +157,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   country_select
   debugger
+  haml
   haml-rails (= 0.3.4)
   heroku
   jquery-rails
