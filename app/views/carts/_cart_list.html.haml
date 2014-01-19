@@ -1,0 +1,21 @@
+#cart-list
+  -cart.products.each do |product|
+    .row-fluid.product-detail
+      .span9
+        -unless action_name == 'checkout'
+          =f.input :product_ids, as: :hidden, input_html:{name:'cart[product_ids][]',class:'product-id-fields', value:product.id}
+        %span= "#{product.name}: #{number_to_currency(product.price)}"
+      .span2
+        =link_to 'x', '#', class:'delete-products', data:{id_to_restore:dom_id(product)} unless action_name == 'checkout'
+  -if cart.products.size > 0
+    -c = cart.class.name.constantize
+    %dl
+      -[:subtotal,:total_discount,:sale_taxes,:total].each do |attribute|
+        %dt= "#{c.human_attribute_name(attribute)}:"
+        %dd= number_to_currency(cart.send(attribute))
+    %p= cart.discount_message
+    -unless action_name == 'checkout'
+      =link_to 'Clear cart', '#', class:'btn btn-danger', id:'clear-cart'
+      =f.button :submit, 'Checkout', class:'btn'
+  -else
+    %p No Products added yet

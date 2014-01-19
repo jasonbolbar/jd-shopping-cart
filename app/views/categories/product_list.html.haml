@@ -1,0 +1,17 @@
+-content_for :main do
+  %h1
+    Products
+  #category-catalog
+    -@categories.each do |category|
+      .category-title{id:dom_id(category)}
+        =link_to '+','#', class:'category_collapse plus btn',remote:true, data:{child:"##{dom_id(category)}_chart"}
+        %h4{class:'category-text'}= category.name
+      .category-chart.row-fluid{id:"#{dom_id(category)}_chart"}
+        -category.products.each do |product|
+          .span2.product{id:dom_id(product), data:{toggle:"popover",path:product_url(product)}}
+            =image_tag(product.image_url,width: 150, height: 150)
+            %p=product.name
+
+-content_for :cart, render('carts/cart')
+
+

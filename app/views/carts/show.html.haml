@@ -1,0 +1,25 @@
+-content_for(:main) do
+  %h1 Cart Information
+  #cart
+    %dl
+      %dt Customer Name:
+      %dd=@cart.customer.to_s
+      %dt Country:
+      %dd=@cart.customer.country
+      %dt Phone
+      %dd=@cart.customer.phone
+  %table{class:'table table-striped table-bordered',style:'margin:auto;width:60%'}
+    %tr
+      %th Detail
+      %th Amount
+    -@cart.products.each do |product|
+      %tr
+        %td= product.name
+        %td= number_to_currency(product.price)
+    -c = @cart.class.name.constantize
+    -[:subtotal,:total_discount,:sale_taxes,:total].each do |attribute|
+      %tr
+        %td
+          %b{style:'float:right;'}= "#{c.human_attribute_name(attribute)}:"
+        %td= number_to_currency(@cart.send(attribute))
+

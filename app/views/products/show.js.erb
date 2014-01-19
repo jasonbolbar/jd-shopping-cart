@@ -1,0 +1,5 @@
+$('.product').popover('destroy');
+$('#<%= dom_id(@product)%>').popover({title:'<%= @product.name %> <%= link_to('X','#', id:"#{dom_id(@product)}_close", style:'float:right;')%>',html: 'true', content:'<%= j render('show')%>'});
+$('#<%= dom_id(@product)%>').popover('show');
+$.fn.closePopover('#<%= dom_id(@product)%>');
+$.fn.addToCart();

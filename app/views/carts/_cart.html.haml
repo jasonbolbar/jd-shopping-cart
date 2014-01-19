@@ -1,0 +1,5 @@
+%h1
+  Cart
+-cart = @cart||Cart.new
+= simple_form_for cart, url:check_out_cart_path do |f|
+  =render 'carts/cart_list', {f:f,cart:cart}

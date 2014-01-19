@@ -1,0 +1,16 @@
+-content_for :main do
+  %h1 Customer Information
+  =simple_form_for @cart, url:complete_path do |f|
+    =f.simple_fields_for :customer do |c|
+      =c.input :names
+      =c.input :last_name
+      =c.input :phone
+      =c.input :country
+      =c.input :card_number
+      =c.input :card_code
+    -@cart.products.each do |product|
+      =f.input :product_ids, as: :hidden, input_html:{name:'cart[product_ids][]', value:product.id}
+    =f.button :submit, 'Complete Order'
+-content_for :cart do
+  %h1 Cart
+  =render('carts/cart_list',{cart:@cart})

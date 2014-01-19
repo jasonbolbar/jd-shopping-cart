@@ -1,0 +1,52 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.category-title{
+  min-height: 30px;
+  margin: auto;
+  background-color: #B2E6FF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: cornflowerblue;
+
+}
+
+.border{
+  -webkit-box-shadow: 0 0 18px cornflowerblue;
+  border: 1px solid;
+  border-color: #B2E6FF;
+}
+
+
+.product{
+  padding-top: 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle ;
+}
+
+.category-chart{
+  padding: 10px;
+}
+
+.category_collapse{
+  margin-top: 5px;
+  margin-left: 5px;
+  float:left;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
