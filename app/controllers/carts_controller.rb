@@ -1,20 +1,33 @@
 class CartsController < ApplicationController
 
-  def add_to_cart
+  def show
+    if params[:id]!='checkout'
+      @cart = Cart.find(params[:id])
+    else
+      redirect_to root_path
+    end
+  end
+
+  def update_cart
     if params[:products]
-      products = Product.find(params[:products].uniq { |i| i.to_i })
-      @cart = Cart.new
-      products.each do |p|
-        @cart.cart_products.build(product_id: p.id)
-      end
-      @cart.total_discount = products.map { |p| p.discount.to_f }.inject { |disc, p| disc + p }
-      @cart.sale_taxes = products.map { |p| p.price*(p.tax.to_f/100) }.inject { |disc, p| disc + p }
-      @cart.total = products.map { |p| p.price.to_f }.inject { |disc, p| disc + p } + @cart.sale_taxes - @cart.total_discount
+      @cart = Cart.new(product_ids:(params[:products].uniq { |i| i.to_i }))
     end
   end
 
   def checkout
-
+    @cart = Cart.new(params[:cart])
+    @cart.build_customer()
+    render 'customer_information'
   end
+
+  def complete
+    @cart = Cart.new(params[:cart])
+    if @cart.save
+      redirect_to @cart
+    else
+      render 'checkout'
+    end
+  end
+
 
 end

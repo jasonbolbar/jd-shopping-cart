@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140115211314) do
+ActiveRecord::Schema.define(:version => 20140119164924) do
 
   create_table "cart_products", :force => true do |t|
     t.integer "cart_id"
@@ -19,14 +19,10 @@ ActiveRecord::Schema.define(:version => 20140115211314) do
   end
 
   create_table "carts", :force => true do |t|
-    t.integer "customer_id"
-    t.boolean "is_checked"
-    t.float   "total_discount"
-    t.float   "sale_taxes"
-    t.float   "total"
+    t.float "total_discount"
+    t.float "sale_taxes"
+    t.float "total"
   end
-
-  add_index "carts", ["customer_id"], :name => "index_carts_on_customer_id"
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -37,12 +33,13 @@ ActiveRecord::Schema.define(:version => 20140115211314) do
   add_index "categories", ["name"], :name => "index_categories_on_name"
 
   create_table "customers", :force => true do |t|
-    t.string "names"
-    t.string "last_name"
-    t.string "phone"
-    t.string "country"
-    t.string "card_number"
-    t.string "card_code"
+    t.string  "names"
+    t.string  "last_name"
+    t.string  "phone"
+    t.string  "country"
+    t.string  "card_number"
+    t.string  "card_code"
+    t.integer "cart_id"
   end
 
   create_table "products", :force => true do |t|

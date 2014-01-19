@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="1122345497">
-    <data-source source="LOCAL" name="Rails jd_shopping_cart: development" product="PostgreSQL" version="9.1.9" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC3g (build 1002)" uuid="30aca4da-8ecd-4dbf-9458-3355e7bb5beb">
-      <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source source="LOCAL" name="Rails jd_shopping_cart: development" uuid="30aca4da-8ecd-4dbf-9458-3355e7bb5beb">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/shopping_cart_db</jdbc-url>
-      <user-name>jd</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/shopping_cart_dev_db</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdcdfdadfc9dfccdf93df9cdf9fdf9adfea</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -16,11 +16,12 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails jd_shopping_cart: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="717f0538-0012-401d-9877-068e4c288b2f">
+    <data-source source="LOCAL" name="Rails jd_shopping_cart: test" uuid="717f0538-0012-401d-9877-068e4c288b2f">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:jd_shopping_cart_test</jdbc-url>
-      <user-name>jd_shopping_cart</user-name>
-      <user-password>dfc0dfcedff5dfd9dfc2dfc5dfdadfdadfc3dfc4dfcddff5dfc9dfcbdfd8dfde</user-password>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/jd_shopping_cart_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdcdfdadfc9dfccdf93df9cdf9fdf9adfea</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -30,11 +31,12 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails jd_shopping_cart: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8ebf0d30-75ca-4f03-b491-daff2db21a33">
+    <data-source source="LOCAL" name="Rails jd_shopping_cart: production" uuid="8ebf0d30-75ca-4f03-b491-daff2db21a33">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:jd_shopping_cart_production</jdbc-url>
-      <user-name>jd_shopping_cart</user-name>
-      <user-password>dfc0dfcedff5dfd9dfc2dfc5dfdadfdadfc3dfc4dfcddff5dfc9dfcbdfd8dfde</user-password>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/jd_shopping_cart_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfdcdfdadfc9dfccdf93df9cdf9fdf9adfea</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>

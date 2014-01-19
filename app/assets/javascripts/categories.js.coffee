@@ -39,13 +39,8 @@ $.fn.closePopover = (element) ->
     $(element).popover('destroy')
 
 $.fn.showProduct = ->
-  $('.show-product').on 'click', (event) ->
-    event.preventDefault()
-    url = $(this).data('path')
-    $.ajax
-      type:'get'
-      url:url
-      dataType:'script'
+  $('.product').on 'click', (event) ->
+    $.fn.getProduct($(this),event)
 
 
 

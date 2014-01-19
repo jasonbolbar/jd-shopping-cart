@@ -5,9 +5,19 @@
 $.fn.disableProduct = (product) ->
   product.addClass('disable-product')
   product.unbind('mouseenter')
-  product.unbind('click')
+  product.off('click');
 
 $.fn.enableProduct = (product) ->
   product.removeClass('disable-product')
   product.bind 'mouseenter', ->
     $(this).addClass('border')
+  product.on 'click', (event) ->
+    $.fn.getProduct($(this),event)
+
+$.fn.getProduct = (element,event) ->
+  event.preventDefault()
+  url = element.data('path')
+  $.ajax
+    type:'get'
+    url:url
+    dataType:'script'

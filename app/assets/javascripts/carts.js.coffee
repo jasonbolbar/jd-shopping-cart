@@ -18,7 +18,7 @@ $.fn.updateCart = (element) ->
     values.push($(this).val())
   $.ajax(
     type:'post'
-    url:'/carts/add_to_cart'
+    url:'/carts/update_cart'
     data:
       products:values
     dataType:'script'
@@ -27,10 +27,19 @@ $.fn.updateCart = (element) ->
 
 
 $.fn.removeFromCart = ->
-  $('.delete-products').click ->
+  $('.delete-products').click (event) ->
     $.fn.enableProduct($('#'+$(this).data('id-to-restore')))
     $(this).first().parents('.row-fluid.product-detail').remove();
     $.fn.updateCart(null)
+    event.preventDefault()
+
+$.fn.clearCart = ->
+  $('#clear-cart').click (event) ->
+    $('.delete-products').each ->
+      $(this).trigger('click')
+    event.preventDefault()
+
+
 
 
 

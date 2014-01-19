@@ -39,6 +39,7 @@ GEM
     coffee-script-source (1.6.3)
     columnize (0.3.6)
     commonjs (0.2.7)
+    country_select (1.2.0)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -135,6 +136,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  country_select
   debugger
   haml-rails (= 0.3.4)
   jquery-rails

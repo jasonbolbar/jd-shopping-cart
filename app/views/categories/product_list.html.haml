@@ -1,20 +1,17 @@
-.container-fluid
-  .row-fluid
-    .span9
-      %h1
-        Products
-      #category-catalog
-        -@categories.each do |category|
-          %div{id:dom_id(category),class:'category-title'}
-            = link_to '+','#', class:'category_collapse plus btn',remote:true, data:{child:"##{dom_id(category)}_chart"}
-            %h4{class:'category-text'}= category.name
-          %div{id:"#{dom_id(category)}_chart", class:'category-chart row-fluid'}
-            -category.products.each do |product|
-              %div{class:'span2 product', id:dom_id(product), data:{toggle:"popover"}}
-                =link_to '#', data:{path:product_url(product)},class:'show-product' do
-                  =image_tag(product.image_url,width: 150, height: 150)
-                %p=product.name
-    #cart.span3
-      =render 'carts/cart'
+-content_for :main do
+  %h1
+    Products
+  #category-catalog
+    -@categories.each do |category|
+      .category-title{id:dom_id(category)}
+        =link_to '+','#', class:'category_collapse plus btn',remote:true, data:{child:"##{dom_id(category)}_chart"}
+        %h4{class:'category-text'}= category.name
+      .category-chart.row-fluid{id:"#{dom_id(category)}_chart"}
+        -category.products.each do |product|
+          .span2.product{id:dom_id(product), data:{toggle:"popover",path:product_url(product)}}
+            =image_tag(product.image_url,width: 150, height: 150)
+            %p=product.name
+
+-content_for :cart, render('carts/cart')
 
 

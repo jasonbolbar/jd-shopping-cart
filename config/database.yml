@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: shopping_cart_db
+  database: shopping_cart_dev_db
   pool: 5
-  username: jd
-  password: 123
+  username: postgres
+  password: vpcf9650@
   host: 127.0.0.1
   port: 5432
 
@@ -46,8 +46,10 @@ test:
   encoding: unicode
   database: jd_shopping_cart_test
   pool: 5
-  username: jd_shopping_cart
-  password: jd_shopping_cart
+  username: postgres
+  password: vpcf9650@
+  host: 127.0.0.1
+  port: 5432
 
 
 production:
@@ -55,5 +57,7 @@ production:
   encoding: unicode
   database: jd_shopping_cart_production
   pool: 5
-  username: jd_shopping_cart
-  password: jd_shopping_cart
+  username: postgres
+  password: vpcf9650@
+  host: 127.0.0.1
+  port: 5432

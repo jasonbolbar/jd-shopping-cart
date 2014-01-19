@@ -16,6 +16,7 @@ group :assets do
   gem 'simple_form'
   gem 'twitter-bootstrap-rails'
   gem 'haml-rails', '0.3.4'
+  gem 'country_select'
   gem "less-rails"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby

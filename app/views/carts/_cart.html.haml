@@ -2,23 +2,4 @@
   Cart
 -cart = @cart||Cart.new
 = simple_form_for cart, url:check_out_cart_path do |f|
-  #cart-list
-    =f.simple_fields_for(:cart_products) do |p|
-      .row-fluid.product-detail
-        .span9
-          =p.input :product_id, as: :hidden, input_html:{class:'product-id-fields'}
-          %span= "#{p.object.product.name}: #{number_to_currency(p.object.product.price)}"
-        .span2
-          =link_to 'x', '#', class:'delete-products', data:{id_to_restore:dom_id(p.object.product)}
-    -if cart.cart_products.size > 0
-      -c = cart.class.name.constantize
-      %dl
-        %dt= "#{c.human_attribute_name(:total_discount)}:"
-        %dd= number_to_currency(cart.total_discount)
-        %dt= "#{c.human_attribute_name(:sale_taxes)}:"
-        %dd= number_to_currency(cart.sale_taxes)
-        %dt= "#{c.human_attribute_name(:total)}:"
-        %dd= number_to_currency(cart.total)
-      =f.button :submit, 'Checkout'
-    -else
-      %p No Products added yet
+  =render 'carts/cart_list', {f:f,cart:cart}
