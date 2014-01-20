@@ -84,6 +84,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Development: jd_shopping_cart" type="RailsRunConfigurationType" factoryName="Rails">
@@ -254,6 +256,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.2.14, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.14, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.14, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.5, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.5.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
@@ -267,22 +270,28 @@
     <orderEntry type="library" scope="PROVIDED" name="debugger-linecache (v1.2.0, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debugger-ruby_core_source (v1.2.3, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="excon (v0.31.0, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.0.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v3.1.8, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml-rails (v0.3.4, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="heroku (v3.2.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="heroku-api (v0.3.16, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.9, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.0.4, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="less (v2.4.0, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="less-rails (v2.4.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.11.8.17, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.8.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="netrc (v0.7.7, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.17.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v2.7.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.5, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.3, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
@@ -292,6 +301,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.5, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rest-client (v1.6.7, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.1.0, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.13, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simple_form (v2.1.1, RVM: ruby-1.9.3-p392 [jd_shopping_cart]) [gem]" level="application" />

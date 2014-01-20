@@ -25,14 +25,12 @@ group :development do
 
 end
 
-<<<<<<< HEAD
+
 group :production do
   gem 'puma'
   gem 'haml'
 end
 
-=======
->>>>>>> ddcdc188bc40a3d3cdf8e0de5641f32dfc7e50b8
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
