@@ -6,6 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+
 gem 'heroku'
 gem 'haml-rails', '0.3.4'
 gem 'simple_form'
@@ -19,19 +20,19 @@ gem 'uglifier', '>= 1.0.3'
 
 
 
-
-
-
 group :development do
   gem 'debugger'
 
 end
 
+<<<<<<< HEAD
 group :production do
   gem 'puma'
   gem 'haml'
 end
 
+=======
+>>>>>>> ddcdc188bc40a3d3cdf8e0de5641f32dfc7e50b8
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

@@ -61,7 +61,10 @@ module JdShoppingCart
 
     # Enable the asset pipeline
     config.assets.enabled = true
+<<<<<<< HEAD
     config.assets.initialize_on_precompile=false
+=======
+>>>>>>> ddcdc188bc40a3d3cdf8e0de5641f32dfc7e50b8
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

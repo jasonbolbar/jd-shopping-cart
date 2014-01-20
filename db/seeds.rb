@@ -24,3 +24,4 @@ Product.create(name:'Man tennis shoes', image_url:"tenis_hombre.jpg", price:150,
 
 
 
+

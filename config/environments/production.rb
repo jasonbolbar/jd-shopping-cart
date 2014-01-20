@@ -9,13 +9,21 @@ JdShoppingCart::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
+<<<<<<< HEAD
   config.serve_static_assets = true
+=======
+  config.serve_static_assets = false
+>>>>>>> ddcdc188bc40a3d3cdf8e0de5641f32dfc7e50b8
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
+<<<<<<< HEAD
   config.assets.compile = true
+=======
+  config.assets.compile = false
+>>>>>>> ddcdc188bc40a3d3cdf8e0de5641f32dfc7e50b8
 
   # Generate digests for assets URLs
   config.assets.digest = true
