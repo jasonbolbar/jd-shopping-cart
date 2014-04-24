@@ -7,7 +7,6 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'debugger'
-gem 'heroku'
 gem 'haml-rails', '0.3.4'
 gem 'simple_form'
 gem 'country_select'

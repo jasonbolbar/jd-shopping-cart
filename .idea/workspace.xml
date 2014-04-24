@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05ae1e1a-ee93-4fd8-928e-d2c9c0d7745e" name="Default" comment="adding bundler gem">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ruby-version" afterPath="$PROJECT_DIR$/.ruby-version" />
+    <list default="true" id="05ae1e1a-ee93-4fd8-928e-d2c9c0d7745e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,8 +43,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024827586" vertical-offset="0" max-vertical-offset="1026">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.19862069" vertical-offset="0" max-vertical-offset="1008">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.ruby-version" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -552,7 +551,11 @@
       <created>1398362822432</created>
       <updated>1398362822432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change ruby version">
+      <created>1398362968595</created>
+      <updated>1398362968596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -622,7 +625,8 @@
     <MESSAGE value="specify ruby version on gemfile" />
     <MESSAGE value="adding bundler gem" />
     <MESSAGE value="remove bundler gem" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove bundler gem" />
+    <MESSAGE value="change ruby version" />
+    <option name="LAST_COMMIT_MESSAGE" value="change ruby version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -985,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024827586" vertical-offset="0" max-vertical-offset="1026">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.19862069" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
