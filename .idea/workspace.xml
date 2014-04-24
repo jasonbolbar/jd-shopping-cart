@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ae1e1a-ee93-4fd8-928e-d2c9c0d7745e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,8 +43,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44689655" vertical-offset="0" max-vertical-offset="1026">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.099310346" vertical-offset="0" max-vertical-offset="1044">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -539,7 +538,11 @@
       <created>1398361567723</created>
       <updated>1398361567723</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="specify ruby version on gemfile">
+      <created>1398361900679</created>
+      <updated>1398361900679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,7 +609,8 @@
     <MESSAGE value="Adding rspec gem" />
     <MESSAGE value="change debugger gem position" />
     <MESSAGE value="change pg gem position" />
-    <option name="LAST_COMMIT_MESSAGE" value="change pg gem position" />
+    <MESSAGE value="specify ruby version on gemfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="specify ruby version on gemfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44689655" vertical-offset="0" max-vertical-offset="1026">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.099310346" vertical-offset="0" max-vertical-offset="1044">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
