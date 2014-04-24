@@ -28,6 +28,10 @@ group :production do
   gem 'haml'
 end
 
+group :test do
+  gem 'rspec-rails'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
