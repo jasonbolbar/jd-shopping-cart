@@ -6,7 +6,6 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'debugger'
-gem 'pg'
 gem 'heroku'
 gem 'haml-rails', '0.3.4'
 gem 'simple_form'
@@ -24,6 +23,7 @@ gem 'uglifier', '>= 1.0.3'
 
 
 group :production do
+  gem 'pg'
   gem 'puma'
   gem 'haml'
 end
